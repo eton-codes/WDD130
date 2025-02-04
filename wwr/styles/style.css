@@ -36,11 +36,6 @@ nav a:hover {
     width: 100%;
 }
 
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-
 #hero-msg h1{
     text-align: center;
 }
@@ -107,6 +102,13 @@ header {
 
 .card-img {
     border: 10px solid #fb8500;
+}
+
+.icon {
+    background-color: bisque;
+    width: 80px;
+    padding-top: 10px;
+    border: 1.5px solid #fb8500;
 }
 
 .rivers-card {
