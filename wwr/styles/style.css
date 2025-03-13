@@ -4,6 +4,10 @@
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #a68a649c;
 }
 
 nav {
@@ -39,7 +43,7 @@ nav a{
 }
 
 nav a:hover {
-    background-color: #a68a64;
+    background-color: #a68a6471;
     color: white;
 }
 
@@ -69,7 +73,7 @@ nav a:hover {
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 600px;
 }
 
 #hero-msg h1{
