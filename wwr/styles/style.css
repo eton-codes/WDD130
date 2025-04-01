@@ -323,10 +323,8 @@ footer .social img {
     grid-column: 1/2;
     grid-row: 1/2;
     border: 10px solid #fb8500;
-    transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
     width: 100%;
-    height: 100%;
 
 }
 
@@ -335,7 +333,7 @@ footer .social img {
     grid-row: 1/2;
     text-align: left;
     margin-top: 10px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding-left: 10px;
 }
 
@@ -349,10 +347,8 @@ footer .social img {
     grid-column: 2/3;
     grid-row: 2/3;
     border: 10px solid #fb8500;
-    transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
     width: 100%;
-    height: 100%;
 }
 
 .ut-text {
@@ -362,7 +358,6 @@ footer .social img {
     margin-top: 10px;
     font-size: 1.6em;
     padding-right: 10px;
-    color: #000;
 }
 
 #arizona {
@@ -375,10 +370,8 @@ footer .social img {
     grid-column: 1/2;
     grid-row: 3/4;
     border: 10px solid #fb8500;
-    transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
     width: 100%;
-    height: 100%;
 }
 
 .az-text {
