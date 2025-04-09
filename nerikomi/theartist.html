@@ -11,13 +11,13 @@
     <body>
 
         <header>
-            <a href="index.html">
-                <img src="images/logo.webp" alt="logo">
+            <a id="logo" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="logo">
             </a>
             <nav>
-                <a href="index.html">home</a>
-                <a href="theartist.html">the artist</a>
-                <a href="gallery.html">gallery</a>
+                <a id="homenav" href="index.html">home</a>
+                <a id="artistnav" href="theartist.html">the artist</a>
+                <a id="gallerynav" href="gallery.html">gallery</a>
             </nav>
         </header>
 
@@ -35,36 +35,43 @@
 
 
             <section class="artistinfo">
-                <div>
+                <div id="artistbox">
+                    
+                
                     <h1>Enrique Stravadiani</h1>
-                    <p>encantada de conocerte.</p>
-                    <img src="images/artist.png" alt="mista enrique">
+                    <h2>encantada de conocerte. nice to meet you.</h2>
+                    
                 </div>
 
-                <div>
-                    <p>My work explores the intersection of beauty, status, and functionality by reinterpreting early 20th-century fine goods through the Japanese Nerikomi technique. Using porcelain, I create durable yet intricate pieces that blend Art Nouveau-inspired ornamentation with modern practicality, redefining the role of decorative arts in everyday life.
-                        My current work is focused on creating increasingly complex and intricate designs within the body of my pieces.
-                        </p>
-                </div>
+                    <img src="images/artist.png" alt="mista enrique">
+                
+
+                    <div id="statement">
+                        <p>My work explores the intersection of beauty, status, and functionality by reinterpreting early 20th-century fine goods through the Japanese Nerikomi technique. Using porcelain, I create durable yet intricate pieces that blend Art Nouveau-inspired ornamentation with modern practicality, redefining the role of decorative arts in everyday life.
+                            My current work is focused on creating increasingly complex and intricate designs within the body of my pieces.
+                            </p>
+                    </div>
+                
+            
             </section>
 
             <section class="studio">
                 <h1>the studio</h1>
 
-                <div>
-                    <img src="images/handclay.jpg" alt="handclay">
-                    <img src="images/pottorman.jpg" alt="pottorman">
-                    <img src="images/studiopic1.jpg" alt="studiopic1">
-                    <img src="images/studiopic2.jpg" alt="studiopic2">
-                </div>
+
+                <img id="studio1" src="images/handclay.jpg" alt="handclay">
+                <img id="studio2" src="images/pottorman.jpg" alt="pottorman">
+                <img id="studio3" src="images/studiopic1.jpg" alt="studiopic1">
+                <p><img id="studio4" src="images/studiopic2.jpg" alt="studiopic2">this is where I find my creativity. the environment of challenge and growth.</p>
+
                 
             </section>
 
 
-            <section>
+            <section class="accolades">
                 <h1>accolades</h1>
 
-                <div>
+                <div class="award">
                     <div id="ooogabooga">
                         <img src="images/ooogabooga.png" alt="ooogabooga">
                         <p>Ooogabooga award</p>
@@ -75,9 +82,9 @@
                         <p>Tony Hawk Choice award</p>
                         <p>1998</p>
                     </div>
-                    <div id="sleezyclamshell">
+                    <div id="paletclub">
                         <img src="images/paletclubartaward.png" alt="paletclubartaward">
-                        <p>Sleezy Clamshell award</p>
+                        <p>Palet Club Art award</p>
                         <p>2021</p>
                     </div>
 
@@ -87,22 +94,25 @@
         </main>
 
         <footer>
-            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a>
-            <a href="https://www.tiktok.com"><img src="images/tiktok.png" alt="tiktok logo"></a>
-            <a href="https://cara.app"><img src="images/cara.jpg" alt="cara logo"></a>
-            <a href="https://dribbble.com"><img src="images/dribbble.png" alt="cara logo"></a>
 
-            <div>
+            <div class="social">
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a>
+                <a href="https://www.tiktok.com"><img src="images/tiktok.png" alt="tiktok logo"></a>
+                <a href="https://cara.app"><img id="cara" src="images/cara.jpg" alt="cara logo"></a>
+                <a href="https://dribbble.com"><img  src="images/dribbble.png" alt="cara logo"></a>
+            </div>
+    
+            <div class="footer-links">
                 <a href="index.html">home</a>
                 <a href="theartist.html">the artist</a>
                 <a href="gallery.html">gallery</a>
+                <a href="site-plan.html">site plan</a>
             </div>
-
-            
-            <p>2025 Eton Williams all rights reserved</p>
-            <p>WDD130</p>
-            <a target="_blank"> Instagram, Tiktok, Dribbble icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-
+    
+    
+            <p id="right">2025 Eton Williams all rights reserved &nbsp; &nbsp; &nbsp; &nbsp; WDD130 </p>
+    
+    
         </footer>
 
     </body>

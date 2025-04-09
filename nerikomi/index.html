@@ -11,91 +11,83 @@
 <body>
 
     <header>
-        <a href="index.html">
-            <img src="images/logo.webp" alt="logo">
+        <a id="logo" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="logo">
         </a>
         <nav>
-            <a href="index.html">home</a>
-            <a href="theartist.html">the artist</a>
-            <a href="gallery.html">gallery</a>
+            <a id="homenav" href="index.html">home</a>
+            <a id="artistnav" href="theartist.html">the artist</a>
+            <a id="gallerynav" href="gallery.html">gallery</a>
         </nav>
     </header>
 
     <main>
+        
         <div class="landing-note">
             <h1 id="land-hone">Enrique Stravadiani</h1>
             <h2 id="land-htwo">the works of the multi-awarded artist<br> and his story.</h2>
-
-            <div class="da-dots">
-                <img id="smalldot" src="images/smalldot.png" alt="smalldot">
-                <img id="bigdot" src="images/smalldot.png" alt="bigdot">
-            </div>
         </div>
 
+        <div class="da-dots">
+            <img id="smalldot" src="images/smalldot.png" alt="smalldot">
+            <img id="bigdot" src="images/smalldot.png" alt="bigdot">
+        </div>
+
+
         
+        <div class="slideshow-container">
 
-        <section class="slidesection">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="slideimg" src="images/art0.jpg" style="width:100%" alt="plate">
+            <div class="text">flowers in water</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="slideimg" src="images/art2.jpg" style="width:100%" alt="cups">
+            <div class="text">quiet summer</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="slideimg" src="images/art3.jpg" style="width:100%" alt="mug">
+            <div class="text">when we met</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+  
+      
 
-            <div class="slider">
-                <div class="slider-content">
-                    <img src="images/art0.jpg" style="width:100%">
-                    <div class="slider-text">flower plate</div>
-                </div>
-                <div class="slider-content">
-                    <img src="images/art2.jpg" style="width:100%">
-                    <div class="slider-text">flock of cups</div>
-                </div>
-                <div class="slider-content">
-                    <img src="images/art3.jpg" style="width:100%">
-                    <div class="slider-text">warm cup</div>
-                </div>
-            </div>
 
 
-            <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-            </div>
+
+          <p class="gallerybutton"><a href="gallery.html">visit the gallery</a></p>
+
         
-            <script>
-                let slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                    let i;
-                    let slides = document.getElementsByClassName("slider");
-                    let dots = document.getElementsByClassName("dot");
-                    for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}    
-                    for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";  
-                    dots[slideIndex-1].className += " active";
-                    setTimeout(showSlides, 4000); // Change image every 2 seconds
-                }
-            </script>
-
-            <p class="gallerybutton"><a href="gallery.html">gallery</a></p>
-
-        </section>
 
 
 
         
-        <p><img src="images/smalldot.png" alt="dotthree"></p>
+        <p id="cont-dotthree"><img id="dotthree" src="images/smalldot.png" alt="dotthree"></p>
 
 
         <section class="meettheartist">
-            <p>meet</p>
-            <p>the artist</p>
 
-            <img src="images/pottorman.jpg" alt="pottorman">
-            <img src="images/handclay.jpg" alt="handclay">
+            <div id="meetcontainer">
+                <h2 id="meettext">meet</h2>
+                <h2 id="artisttext">the artist</h2>
+            </div>
+
+            <img id="potterman" src="images/pottorman.jpg" alt="pottorman">
+            <img id="handclay" src="images/handclay.jpg" alt="handclay">
 
             <p class="storybutton"><a href="theartist.html">my story</a></p>
 
@@ -107,23 +99,50 @@
     </main>
 
     <footer>
-        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a>
-        <a href="https://www.tiktok.com"><img src="images/tiktok.png" alt="tiktok logo"></a>
-        <a href="https://cara.app"><img src="images/cara.jpg" alt="cara logo"></a>
-        <a href="https://dribbble.com"><img src="images/dribbble.png" alt="cara logo"></a>
 
-        <div>
+        <div class="social">
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a>
+            <a href="https://www.tiktok.com"><img src="images/tiktok.png" alt="tiktok logo"></a>
+            <a href="https://cara.app"><img id="cara" src="images/cara.jpg" alt="cara logo"></a>
+            <a href="https://dribbble.com"><img  src="images/dribbble.png" alt="cara logo"></a>
+        </div>
+
+        <div class="footer-links">
             <a href="index.html">home</a>
             <a href="theartist.html">the artist</a>
             <a href="gallery.html">gallery</a>
+            <a href="site-plan.html">site plan</a>
         </div>
 
-        
-        <p>2025 Eton Williams all rights reserved</p>
-        <p>WDD130</p>
-        <a target="_blank"> Instagram, Tiktok, Dribbble icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+        <p id="right">2025 Eton Williams all rights reserved &nbsp; &nbsp; &nbsp; &nbsp; WDD130 </p>
+
 
     </footer>
+
+
+    <!--javascript for the slider-->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 10000);
+        }
+        </script>
 
 </body>
 </html>
